@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lMZ-4d-VGg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation View Controller-->
+        <scene sceneID="LGC-HP-3SX">
+            <objects>
+                <navigationController id="lMZ-4d-VGg" customClass="BaseNavigationViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hQg-ZH-XkV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="LS2-0Y-X9q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrB-ZA-t9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="-160"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em3-r7-dn4">
+                                <rect key="frame" x="268" y="79" width="65" height="30"/>
+                                <state key="normal" title="网络请求">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadAD:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eGD-mf-2Jw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-Uy-fhA">
+                                <rect key="frame" x="9" y="157" width="600" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="211" id="PhG-0x-F6I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HLU-Uy-fhA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7ZM-Jw-AP7"/>
+                            <constraint firstAttribute="trailing" secondItem="HLU-Uy-fhA" secondAttribute="trailing" id="98N-td-OKK"/>
+                            <constraint firstAttribute="centerX" secondItem="Em3-r7-dn4" secondAttribute="centerX" id="cih-lo-yy1"/>
+                            <constraint firstItem="Em3-r7-dn4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="j4z-O1-A6m"/>
+                            <constraint firstItem="HLU-Uy-fhA" firstAttribute="top" secondItem="Em3-r7-dn4" secondAttribute="bottom" constant="109" id="s4c-kv-T6U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AYY-o3-qvy"/>
+                    <connections>
+                        <outlet property="adImageView" destination="HLU-Uy-fhA" id="Jy0-TH-0QJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="-160"/>
+        </scene>
+    </scenes>
+</document>

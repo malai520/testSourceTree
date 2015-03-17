@@ -1,0 +1,80 @@
+10
+
+dir
+8773
+svn://tanjian@192.168.1.234/root/ios_framework/Framework/Framework/Vendors/AFNetworking
+svn://tanjian@192.168.1.234
+
+
+
+2015-03-11T08:58:04.513578Z
+8773
+guojiang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d6da2906-b76d-4016-bf36-d3172097a6a0
+
+Reachability
+dir
+
+NSURLConnection
+dir
+
+AFNetworking.h
+file
+
+
+
+
+2015-03-11T09:15:25.000000Z
+49f5535210f638e58415f97c67ed3b71
+2015-03-11T08:58:04.513578Z
+8773
+guojiang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1866
+
+UIKit
+dir
+
+NSURLSession
+dir
+
+Security
+dir
+
+Serialization
+dir
+
